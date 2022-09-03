@@ -351,7 +351,7 @@ let internationalNews = (interNews) => {
           <h5 class="card-title">${news.title}</h5>
           <p class="card-text"></p>
           <p class="card-text">
-           ${news.details.slice(0, 300)}
+           ${news.details.slice(0, 300).concat("...")}
           </p>
           <div class="more-detail d-flex justify-content-between">
             <div class="author">
@@ -359,7 +359,6 @@ let internationalNews = (interNews) => {
               <span id="author-name">${
                 news.author.name ? news.author.name : "No name given"
               }</span>
-              <p>${news.author.published_date}</p>
             </div>
             <div class="view">
             <p> views : ${news.total_view ? news.total_view : "No views"}</p>
@@ -421,7 +420,7 @@ let entertainmentNews = (entertainment) => {
           <h5 class="card-title">${news.title}</h5>
           <p class="card-text"></p>
           <p class="card-text">
-           ${news.details.slice(0, 300)}
+           ${news.details.slice(0, 300).concat("...")}
           </p>
           <div class="more-detail d-flex justify-content-between">
             <div class="author">
@@ -429,7 +428,6 @@ let entertainmentNews = (entertainment) => {
               <span id="author-name">${
                 news.author.name ? news.author.name : "No name given"
               }</span>
-              <p>${news.author.published_date}</p>
             </div>
             <div class="view">
             <p> views : ${news.total_view ? news.total_view : "No views"}</p>
@@ -491,7 +489,7 @@ let artsNews = (arts) => {
           <h5 class="card-title">${news.title}</h5>
           <p class="card-text"></p>
           <p class="card-text">
-           ${news.details.slice(0, 300)}
+           ${news.details.slice(0, 300).concat("...")}
           </p>
           <div class="more-detail d-flex justify-content-between">
             <div class="author">
@@ -499,7 +497,6 @@ let artsNews = (arts) => {
               <span id="author-name">${
                 news.author.name ? news.author.name : "No name given"
               }</span>
-              <p>${news.author.published_date}</p>
             </div>
             <div class="view">
             <p> views : ${news.total_view ? news.total_view : "No views"}</p>
@@ -567,7 +564,7 @@ let cultureNews = (culture) => {
               <span id="author-name">${
                 news.author.name ? news.author.name : "No name given"
               }</span>
-              <p>${news.author.published_date}</p>
+              
             </div>
             <div class="view">
             <p> views : ${news.total_view ? news.total_view : "No views"}</p>
