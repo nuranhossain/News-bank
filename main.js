@@ -378,6 +378,8 @@ let internationalNews = (interNews) => {
     `;
     newsField.append(card);
   }
+  // spinner loading stop
+  spinnerLoading(true);
 };
 
 // EnterTainment News
