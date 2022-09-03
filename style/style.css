@@ -1,0 +1,130 @@
+.menu {
+  margin-top: 50px;
+}
+
+.icon span {
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 7px 10px;
+  color: white;
+}
+
+.icon h4 {
+  color: orangered;
+}
+
+.home {
+}
+
+.home a {
+  margin-right: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.border-menu {
+  color: orangered;
+  margin-top: 50px;
+}
+
+.total-items-count {
+  height: 50px;
+  background-color: rgb(216, 210, 210);
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tody {
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: white;
+  border: none;
+}
+
+.trending {
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: orangered;
+  border: 1px solid orangered;
+}
+.category-list {
+  margin: auto;
+  text-align: center;
+}
+
+.category-list a {
+  color: black;
+  font-size: 20px;
+}
+
+.category-list a:hover {
+  color: orangered;
+}
+
+.card {
+  border: 0;
+}
+
+.more-detail {
+  bottom: 0;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.author img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author p {
+  font-size: 14px;
+  margin-left: 55px;
+}
+.news-img {
+  width: 244px;
+  height: 300px;
+}
+
+.view {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-body {
+  margin: auto;
+}
+
+.card {
+  margin: auto;
+}
+
+.modalInfo h2 {
+  font-size: 24px;
+  color: orangered;
+  text-align: center;
+}
+
+.modalInfo span {
+  font-weight: bold;
+  color: gray;
+}
+.modalInfo img {
+  margin-bottom: 20px;
+}
