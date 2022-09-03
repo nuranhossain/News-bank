@@ -389,6 +389,8 @@ document.getElementById("entertainment").addEventListener("click", function () {
   fetch(url)
     .then((res) => res.json())
     .then((data) => internationalNews(data.data));
+  // spinner loading start
+  spinnerLoading(true);
 });
 
 let entertainmentNews = (entertainment) => {
@@ -446,6 +448,8 @@ let entertainmentNews = (entertainment) => {
     `;
     newsField.append(card);
   }
+  // spinner-loading stop
+  spinnerLoading(true);
 };
 
 // arts
@@ -455,6 +459,8 @@ document.getElementById("arts").addEventListener("click", function () {
   fetch(url)
     .then((res) => res.json())
     .then((data) => artsNews(data.data));
+  // spinner loading start
+  spinnerLoading(true);
 });
 
 let artsNews = (arts) => {
@@ -512,6 +518,7 @@ let artsNews = (arts) => {
     `;
     newsField.append(card);
   }
+  spinnerLoading(true);
 };
 // culture
 document.getElementById("culture").addEventListener("click", function () {
