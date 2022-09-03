@@ -379,7 +379,7 @@ let internationalNews = (interNews) => {
     newsField.append(card);
   }
   // spinner loading stop
-  spinnerLoading(true);
+  spinnerLoading(false);
 };
 
 // EnterTainment News
@@ -449,7 +449,7 @@ let entertainmentNews = (entertainment) => {
     newsField.append(card);
   }
   // spinner-loading stop
-  spinnerLoading(true);
+  spinnerLoading(false);
 };
 
 // arts
@@ -518,7 +518,8 @@ let artsNews = (arts) => {
     `;
     newsField.append(card);
   }
-  spinnerLoading(true);
+  // spinner stop
+  spinnerLoading(false);
 };
 // culture
 document.getElementById("culture").addEventListener("click", function () {
@@ -526,6 +527,8 @@ document.getElementById("culture").addEventListener("click", function () {
   fetch(url)
     .then((res) => res.json())
     .then((data) => cultureNews(data.data));
+  // spinner start
+  spinnerLoading(true);
 });
 
 let cultureNews = (culture) => {
@@ -583,6 +586,8 @@ let cultureNews = (culture) => {
     `;
     newsField.append(card);
   }
+  // spinner stop
+  spinnerLoading(false);
 };
 
 loadData();
