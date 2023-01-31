@@ -66,7 +66,7 @@ let displayNews = (allNews) => {
   }
 };
 
-// show more Details
+// show more Details modal
 
 let showMoreInfo = (id) => {
   fetch(`https://openapi.programming-hero.com/api/news/${id}`)
@@ -85,7 +85,7 @@ let spinnerLoading = (spinner) => {
     loading.classList.add("d-none");
   }
 };
-
+// modal
 let showmore = (details) => {
   console.log(details);
   let modalBody = document.getElementById("modal");
@@ -763,3 +763,8 @@ let home = (homes) => {
 
 loadData();
 entertainment;
+
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
